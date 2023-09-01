@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./Gallery.css">
+    <script src="./Gallery.js" defer></script>
+</head>
+<body>
+    <div id="heading">
+    <h1>My Gallary</h1></div>
+    <div id="container">
+        <img onclick="imageContainer(this.src)">
+        <img onclick="imageContainer(this.src)">
+        <img onclick="imageContainer(this.src)">
+        <img onclick="imageContainer(this.src)">
+        <img onclick="imageContainer(this.src)">
+        <img onclick="imageContainer(this.src)">
+        <img onclick="imageContainer(this.src)">
+        <img onclick="imageContainer(this.src)">
+        <img onclick="imageContainer(this.src)">
+        <img onclick="imageContainer(this.src)">
+        <img onclick="imageContainer(this.src)">
+        <img onclick="imageContainer(this.src)">
+        <img onclick="imageContainer(this.src)">
+        <img onclick="imageContainer(this.src)">
+        <img onclick="imageContainer(this.src)">
+        <img onclick="imageContainer(this.src)">
+        <img onclick="imageContainer(this.src)">
+    </div>
+    <div id="biggerImageContainer">
+        <span id="close" onclick="closeImageContainer()">X</span>
+        <div id="image"></div>
+        <input type="button" value="Edit" id="editButton" onclick="editWindowEnable()">
+    </div>
+    <div id="editContainer">
+        <span id="editClose" onclick="editWindowClose()">X</span>
+        <div id="editImage">
+            <div id="imageTag"></div>
+        </div>
+        <div id="filter">
+            <h1 class="editHeading">Filter Properties</h1>
+            <h5>Blur</h5>
+            <input type="range" max="10" value="0" id="blur" oninput="effects()">
+            <h5>Brightness</h5>
+            <input type="range" min="0" max="200" value="100" id="brightVal" oninput="effects()">
+            <h5>Contrast</h5>
+            <input type="range"  min="0" max="200" value="100" id="conVal" oninput="effects()">
+            <h5>Grayscale</h5>
+            <input type="range"  min="0" max="100" value="0" id="grayVal" oninput="effects()">
+            <h5>Hue-Rotate</h5>
+            <input type="range"  min="0" max="360" value="0" id="hueVal" oninput="effects()">
+            <h5>Invert</h5>
+            <input type="range"  min="0" max="100" value="0" id="invVal" oninput="effects()">
+            <h5>Opacity</h5>
+            <input type="range" value="100" id="opaVal" oninput="effects()">
+            <h5>Saturate</h5>
+            <input type="range"  min="0" max="200" value="100" id="satVal" oninput="effects()">
+            <h5>Sepia</h5>
+            <input type="range"  min="0" max="100" value="0" id="sepVal" oninput="effects()">
+        </div>
+        <div id="transform">
+            <h1 class="editHeading">Transform Properties</h1>
+            <h5>Rotate Z</h5>
+            <input type="range" min="0" max="180" value="0" id="rotz" oninput="effects()">
+            <h5>Rotate X</h5>
+            <input type="range" min="0" max="180" value="0" id="rotx" oninput="effects()">
+            <h5>Rotate Y</h5>
+            <input type="range" min="0" max="180" value="0" id="roty" oninput="effects()">
+            <h5>Scale</h5>
+            <input type="range" min="0" max="3" value="1" id="scaleVal" oninput="effects()">
+            <h5>Scale X</h5>
+            <input type="range" min="0" max="3" value="1" id="scalex" oninput="effects()">
+            <h5>Scale Y</h5>
+            <input type="range" min="0" max="3" value="1" id="scaley" oninput="effects()">
+            <h5>Skew</h5>
+            <input type="range" min="0" max="180" value="0" id="skewVal" oninput="effects()">
+            <h5>Skew X</h5>
+            <input type="range" min="0" max="180" value="0" id="skewX" oninput="effects()">
+            <h5>Skew Y</h5>
+            <input type="range" min="0" max="180" value="0" id="skewY" oninput="effects()">
+        </div>
+    </div>
+</body>
+</html>
